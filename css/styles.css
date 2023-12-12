@@ -23,7 +23,7 @@ main {
 
 header {
   background-color: #348feb;
-  color: white;
+  color: rgba(255, 255, 255, 0.979);
 }
 
 h2 {
