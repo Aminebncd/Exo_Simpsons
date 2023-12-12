@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% de la hauteur de la fenêtre */
+  background-color: #fccf03;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0 10%;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permet le passage à la ligne si l'espace est insuffisant */
+  background-color: white;
+  flex-grow: 1;
+}
+
+header {
+  background-color: #348feb;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  margin: 5px auto 10px auto;
+}
+
+#head {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+nav {
+  color: white;
+  background-color: #348feb;
+  max-width: 120px;
+  width: 100%;
+  height: 7.5em;
+  padding: 0.5rem 2rem;
+  margin-top: 30px;
+  margin-left: 0.5rem;
+  text-align: center;
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: lightgray;
+}
+
+a:hover,
+a:active {
+  color: #eee;
+}
+
+article {
+  padding: 40px;
+
+  width: calc(50% - 0.5rem); /* Ajuste la largeur en fonction de la marge */
+  max-width: 800px;
+  flex: 2;
+}
+article > p {
+  text-align: justify; /* Justifie le texte à l'intérieur du paragraphe */
+}
+
+h1 {
+  color: #fccf03;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+aside {
+  color: white;
+  background-color: #348feb;
+  max-width: 170px; /* Limite la largeur maximale de l'image */
+  width: 100%;
+  height: 29em;
+  padding: 0.5rem 2rem;
+  margin-top: 30px;
+  margin-right: 0.5rem;
+  font-style: italic;
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Pour que le texte et l'image soient empilés verticalement */
+}
+
+h3 {
+  text-align: center;
+}
+
+aside > p {
+  text-align: justify;
+  flex: 2; /* Fait en sorte que le texte occupe plus d'espace */
+}
+
+#Matt {
+  max-width: 150px;
+  flex: 1; /* Limite la largeur de l'image */
+  border: 1px solid white;
+  align-self: center;
+  margin-right: 7px;
+}
+
+footer {
+  background-color: #113582;
+  color: white;
+  height: 35px;
+  width: 100%; /* S'étend sur toute la largeur disponible */
+  margin-left: 0; /* Ajuste la marge gauche à zéro */
+  margin-right: 0;
+  text-align: center;
+  padding-top: 5px;
+  margin-top: auto;
+}
